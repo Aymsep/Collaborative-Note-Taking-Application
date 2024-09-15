@@ -1,6 +1,6 @@
 [submodule "Client"]
 	path = Client
-	url = ./Client/
+	url = https://github.com/Aymsep/Frontend-Collaborative-Note-Taking.git
 [submodule "Server"]
 	path = Server
-	url = ./Server/
+	url = https://github.com/Aymsep/Backend-Collaborative-Note-Taking
