@@ -1,0 +1,58 @@
+version: '3'
+services:
+  # PostgreSQL database service
+  db:
+    image: postgres:13
+    restart: always
+    container_name: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: nestjs
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+
+  # PgAdmin service to manage the PostgreSQL database
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: pgadmin4
+    ports:
+      - '5050:80'
+    depends_on:
+      - db
+
+  # Backend (NestJS) service
+  backend:
+    build:
+      context: ./Server  # Path to the backend Dockerfile
+      dockerfile: Dockerfile
+    container_name: nest-backend
+    environment:
+      - DATABASE_URL=postgresql://postgres:123@db:5432/nestjs
+    ports:
+      - '3000:3000'
+    depends_on:
+      - db
+    volumes:
+      - ./Server/src:/app/src  # For live development
+    command: sh -c "npm install && npx prisma migrate dev && npm run start:dev"
+
+  # Frontend (Vue.js) service
+  frontend:
+    build:
+      context: ./Client  # Path to the frontend Dockerfile
+      dockerfile: Dockerfile
+    container_name: vue-frontend
+    ports:
+      - '5173:80'  # Exposing port 5173
+    depends_on:
+      - backend  # Wait for backend to be up before starting frontend
+
+volumes:
+  postgres-data:  # Volume for persisting PostgreSQL data
