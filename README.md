@@ -32,11 +32,12 @@ You can run this project either in a traditional way by cloning the repository a
 
 #### Step 1: Clone the repository
 
-\`\`\`bash
+```markdown
+\```bash
 git clone <repository-url>
 cd <project-directory>
 git submodule update --init --recursive
-\`\`\`
+\```
 
 #### Step 2: Install dependencies
 
