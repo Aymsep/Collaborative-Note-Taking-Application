@@ -13,6 +13,11 @@ This is a fullstack collaborative note-taking application designed for real-time
 **Responsive Design** : Fully optimized for desktop and mobile devices.<br><br>
 **Database Management** : PostgreSQL is used as the main database to store users, notes, and shared note relationships, with optional PgAdmin support for database management.
 
+## Demo
+
+Insert gif or link to demo
+https://main--celadon-creponne-5a20ab.netlify.app/
+
 ## Table of Contents
 
 - [Technologies Used](#technologies-used)
