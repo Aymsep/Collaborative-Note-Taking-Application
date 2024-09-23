@@ -15,7 +15,7 @@ This is a fullstack collaborative note-taking application designed for real-time
 
 ## Demo
 
-Insert gif or link to demo
+link to demo
 https://main--celadon-creponne-5a20ab.netlify.app/
 
 ## Table of Contents
