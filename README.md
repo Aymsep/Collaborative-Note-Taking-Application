@@ -1,7 +1,17 @@
 
-# Fullstack Application (Vue.js, NestJS, PostgreSQL)
+# Collaborative Note-Taking Application (Vue.js, NestJS, PostgreSQL)
 
-This is a fullstack application using Vue.js for the frontend, NestJS for the backend, and PostgreSQL as the database. The project also includes Docker configuration to set up the environment for development , with optional PgAdmin for database management.
+This is a fullstack collaborative note-taking application designed for real-time note sharing and editing, utilizing Vue.js for the frontend, NestJS for the backend, and PostgreSQL as the database. The application allows users to create, edit, and share notes with others in real time, with changes reflected immediately across shared users. The app includes rich-text editing capabilities using Quill Editor, enabling users to format text (e.g., bold, italic, and colored text). Notes can also be organized, deleted, and shared with other users, and the application ensures smooth real-time collaboration via WebSockets.
+
+## Features:
+
+**Real-Time Note Collaboration** : Users can edit notes in real time, with changes reflected for all shared users instantly.
+**Rich Text Editor** : Supports bold, italic, underline, color formatting, and more, using the Quill Editor.
+**Note Sharing** : Users can share notes with others, allowing multiple collaborators to edit and view notes simultaneously.
+**Real-Time Updates** : Notes are updated and shared in real time using WebSockets.
+**Authentication & Authorization** : JWT-based authentication ensures secure login, user sessions, and permission management.
+**Responsive Design** : Fully optimized for desktop and mobile devices.
+**Database Management** : PostgreSQL is used as the main database to store users, notes, and shared note relationships, with optional PgAdmin support for database management.
 
 ## Table of Contents
 
