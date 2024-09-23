@@ -5,12 +5,12 @@ This is a fullstack collaborative note-taking application designed for real-time
 
 ## Features:
 
-**Real-Time Note Collaboration** : Users can edit notes in real time, with changes reflected for all shared users instantly.<br>
-**Rich Text Editor** : Supports bold, italic, underline, color formatting, and more, using the Quill Editor.<br>
-**Note Sharing** : Users can share notes with others, allowing multiple collaborators to edit and view notes simultaneously.<br>
-**Real-Time Updates** : Notes are updated and shared in real time using WebSockets.<br>
-**Authentication & Authorization** : JWT-based authentication ensures secure login, user sessions, and permission management.<br>
-**Responsive Design** : Fully optimized for desktop and mobile devices.<br>
+**Real-Time Note Collaboration** : Users can edit notes in real time, with changes reflected for all shared users instantly.<br><br>
+**Rich Text Editor** : Supports bold, italic, underline, color formatting, and more, using the Quill Editor.<br><br>
+**Note Sharing** : Users can share notes with others, allowing multiple collaborators to edit and view notes simultaneously.<br><br>
+**Real-Time Updates** : Notes are updated and shared in real time using WebSockets.<br><br>
+**Authentication & Authorization** : JWT-based authentication ensures secure login, user sessions, and permission management.<br><br>
+**Responsive Design** : Fully optimized for desktop and mobile devices.<br><br>
 **Database Management** : PostgreSQL is used as the main database to store users, notes, and shared note relationships, with optional PgAdmin support for database management.
 
 ## Table of Contents
